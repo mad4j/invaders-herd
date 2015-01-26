@@ -42,10 +42,14 @@ void draw() {
     }
   }
   
-  save("invaders-herd.png");
+  //save("invaders-herd.png");
 }
 
 void keyPressed() {
+  redraw();
+}
+
+void mousePressed() {
   redraw();
 }
 
