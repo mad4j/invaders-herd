@@ -2,17 +2,19 @@
 
 final float GRC = 0.618033988749895; //golden_ratio_conjugate
 
-float value = random(100);
+float value = random(360);
 
 void setColor() {
-  colorMode(HSB, 100, 100, 100);
   
-  value += 100*GRC;
-  value %= 100;
+  colorMode(HSB, 360, 100, 100);
   
-  stroke(value, 50, 95);
-  fill(value, 50, 95);
+  value += 360*GRC;
+  value %= 360;
   
+  stroke(value, 80, 80);
+  fill(value, 80, 80);
+  
+  colorMode(RGB, 255, 255, 255);
 }
 
 
@@ -60,7 +62,7 @@ void draw() {
     }
   }
   
-  //save("invaders-herd.png");
+  save("invaders-herd.png");
 }
 
 void keyPressed() {
