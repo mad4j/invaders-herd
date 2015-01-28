@@ -4,7 +4,7 @@ final float GRC = 0.618033988749895; //golden_ratio_conjugate
 
 float value = random(360);
 
-void setColor() {
+void changeColor() {
     
   value += 360*GRC;
   value %= 360;
@@ -16,8 +16,6 @@ void setColor() {
 
 void drawVader(int seed, int x, int y, int w, int h) {
  
-  setColor();
-  
   float dx = w / 5.0;
   float dy = h / 5.0;
   
@@ -55,11 +53,12 @@ void draw() {
   
   for (int i=0; i<24; i++) {
     for (int j=0; j<24; j++) {
+      changeColor();
       drawVader((int)random(0xffff), i*25, j*25, 20, 20);
     }
   }
   
-  save("invaders-herd.png");
+  //save("invaders-herd.png");
 }
 
 void keyPressed() {
