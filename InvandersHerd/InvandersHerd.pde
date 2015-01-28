@@ -51,7 +51,7 @@ void setup() {
 
 void draw() {
   
-  background(0, 0, 0);
+  background(0, 0, 100);
   
   for (int i=0; i<24; i++) {
     for (int j=0; j<24; j++) {
