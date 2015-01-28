@@ -5,16 +5,12 @@ final float GRC = 0.618033988749895; //golden_ratio_conjugate
 float value = random(360);
 
 void setColor() {
-  
-  colorMode(HSB, 360, 100, 100);
-  
+    
   value += 360*GRC;
   value %= 360;
   
   stroke(value, 80, 80);
   fill(value, 80, 80);
-  
-  colorMode(RGB, 255, 255, 255);
 }
 
 
@@ -46,15 +42,16 @@ void drawVader(int seed, int x, int y, int w, int h) {
 }
 
 void setup() {
+  
   size(600, 600);
   noLoop();
+  
+  colorMode(HSB, 360, 100, 100);
 }
 
 void draw() {
   
-  background(255);
-  fill(0);
-  stroke(0);
+  background(0, 0, 0);
   
   for (int i=0; i<24; i++) {
     for (int j=0; j<24; j++) {
