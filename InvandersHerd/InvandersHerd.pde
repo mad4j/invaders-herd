@@ -1,7 +1,25 @@
 
 
+final float GRC = 0.618033988749895; //golden_ratio_conjugate
+
+float value = random(100);
+
+void setColor() {
+  colorMode(HSB, 100, 100, 100);
+  
+  value += 100*GRC;
+  value %= 100;
+  
+  stroke(value, 50, 95);
+  fill(value, 50, 95);
+  
+}
+
+
 void drawVader(int seed, int x, int y, int w, int h) {
  
+  setColor();
+  
   float dx = w / 5.0;
   float dy = h / 5.0;
   
