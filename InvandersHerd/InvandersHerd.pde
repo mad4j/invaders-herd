@@ -1,8 +1,17 @@
 
+/**
+ * Invaders Herd
+ * Daniele Olmisani, 2015
+ *
+ * - daniele.olmisani@gmail.com
+ * - https://github.com/mad4j/invaders-herd
+ */
 
-final float GRC = 0.618033988749895; //golden_ratio_conjugate
 
-float value = random(360);
+//golden_ratio_conjugate
+final float GRC = 0.618033988749895; 
+
+float value;
 
 void changeColor() {
     
@@ -14,7 +23,7 @@ void changeColor() {
 }
 
 
-void drawVader(int seed, int x, int y, int w, int h) {
+void drawInvader(int seed, int x, int y, int w, int h) {
  
   float dx = w / 5.0;
   float dy = h / 5.0;
@@ -45,16 +54,19 @@ void setup() {
   noLoop();
   
   colorMode(HSB, 360, 100, 100);
+  
+  value = random(360);
 }
 
 void draw() {
   
+  //white background
   background(0, 0, 100);
   
   for (int i=0; i<24; i++) {
     for (int j=0; j<24; j++) {
       changeColor();
-      drawVader((int)random(0xffff), i*25, j*25, 20, 20);
+      drawInvader((int)random(0xffff), i*25, j*25, 20, 20);
     }
   }
   
