@@ -6,3 +6,4 @@ all possible imaginable Space Invader monster
 
 See also
 * [Levitated](http://levitated.net/daily/levInvaderFractal.html)
+* [Martin Ankerl](http://martin.ankerl.com/2009/12/09/how-to-create-random-colors-programmatically/)
