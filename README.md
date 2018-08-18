@@ -1,5 +1,5 @@
 # Invaders Herd
-All possible imaginable Space Invader monster
+All possible imaginable Space Invader monsters
 
 ### Sample
 ![Herd](https://raw.githubusercontent.com/mad4j/invaders-herd/master/InvandersHerd/invaders-herd.png)
